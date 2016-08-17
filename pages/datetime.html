@@ -1,0 +1,39 @@
+<div class="row" id="row-margin">
+	<div class="col-sm-12" id="event-border">
+		<h5>START: {{eventInfo.eventStartDate | date:'MM/dd/yyyy @ h:mma'}}</h5>
+		<h5>END: {{eventInfo.eventEndDate | date:'MM/dd/yyyy @ h:mma'}}</h5>
+		<h5>HOST: {{eventInfo.eventHost}}</h5>
+		<h5>EVENT: {{eventInfo.eventName}}</h5>
+		<h5>TYPE: {{eventInfo.eventType}}</h5>
+		<h5>WHERE: {{eventInfo.eventLocation}}</h5>
+	</div>
+	<ul class="nav nav-tabs" role="tablist">
+		<li class="active" role="presentation"><a class="link-decoration" aria-controls="profile" role="tab" data-toggle="tab">When</a></li>
+		<li><p id="tab-padding-guests"><a href="#/guestlist" id="link-decoration">Who</a></p></li>
+		<li><p id="tab-padding-info"><a href="#/createevent" id="link-decoration">What</a></p></li>
+	</ul>
+	<div class="tab-content" id="tab-content-padding">
+		<div role="tabpanel" class="tab-pane active" id="profile">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="inputEventStartDate" class="col-sm-2 control-label">Start Date and Time</label>
+					<div class="col-sm-10">
+						<input type="datetime-local" class="form-control" id="inputEventStartDate" ng-model="eventInfo.eventStartDate" focus="true">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEventEndDate" class="col-sm-2 control-label">End Date and Time</label>
+					<div class="col-sm-10">
+						<input type="datetime-local" class="form-control" id="inputEventEndDate" ng-model="eventInfo.eventEndDate">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-offset-2 col-md-10">
+						<a href="#/guestlist" class="btn btn-primary">Next</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+

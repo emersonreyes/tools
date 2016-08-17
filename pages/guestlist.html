@@ -1,0 +1,57 @@
+<div class="row" id="row-margin">
+	<div class="col-sm-12" id="event-border">
+		<h5>START: {{eventInfo.eventStartDate | date:'MM/dd/yyyy @ h:mma'}}</h5>
+		<h5>END: {{eventInfo.eventEndDate | date:'MM/dd/yyyy @ h:mma'}}</h5>
+		<h5>HOST: {{eventInfo.eventHost}}</h5>
+		<h5>EVENT: {{eventInfo.eventName}}</h5>
+		<h5>TYPE: {{eventInfo.eventType}}</h5>
+		<h5>WHERE: {{eventInfo.eventLocation}}</h5>
+	</div>	
+	<ul class="nav nav-tabs" role="tablist">
+		<li><p id="tab-padding-date"><a href="#/datetime" id="link-decoration">When</a></p></li>
+		<li class="active" role="presentation"><a class="link-decoration" aria-controls="profile" role="tab" data-toggle="tab">Who</a></li>
+		<li><p id="tab-padding-info"><a href="#/createevent" id="link-decoration">What</a></p></li>
+	</ul>
+	<div class="tab-content" id="tab-content-padding">
+		<div role="tabpanel" class="tab-pane active" id="home">
+			<form class="form-horizontal" ng-submit="submitForm()">
+				<div class="form-group">
+					<label for="inputEventHost" class="col-sm-2 control-label">Host</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputEventHost" placeholder="Who is the host?" ng-model="eventInfo.eventHost" required focus="true">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputGuestOne" class="col-sm-2 control-label">Guest #1</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputGuestOne" placeholder="add a guest" ng-model="eventInfo.eventGuestOne">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputGuestTwo" class="col-sm-2 control-label">Guest #2</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputGuestTwo" placeholder="add a guest" ng-model="eventInfo.eventGuestTwo">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputGuestThree" class="col-sm-2 control-label">Guest #3</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputGuestThree" placeholder="add a guest" ng-model="eventInfo.eventGuestThree">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-offset-2 col-md-10">
+						<div class="bs-example">
+							<div class="btn-group"> 
+								<button class="btn btn-primary"><a id="previous" href="#/datetime" >Previous</a></button>  
+							</div>
+							<div class="btn-group">
+								<a href="#/createevent" class="btn btn-primary">Next</a>
+							</div>
+						</div>
+					</div>
+				</div>					
+			</form>
+		<div>
+	</div>
+</div>

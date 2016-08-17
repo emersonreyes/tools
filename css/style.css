@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* user-select CSS property */
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+/* end */
+
+body {
+	padding: 0.5em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+#event-border {
+	border: 2px solid #cccccc;
+	margin: 4px 0px 10px 0px;
+	border-radius: 10px;
+}
+
+#row-margin {
+	margin: 2%;
+}
+
+#tab-padding-date {
+	padding-top: 12px;
+	padding-right: 10px;
+}
+
+#tab-padding-guests {
+	padding-top: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#tab-padding-info {
+	padding-top: 12px;
+	padding-left: 10px;
+}
+
+#tab-content-padding {
+	padding-top: 20px;
+}
+
+#previous {
+	text-decoration: none;
+	color: inherit;
+}
+
+#link-decoration {
+	text-decoration: none;
+}
+
+
+
